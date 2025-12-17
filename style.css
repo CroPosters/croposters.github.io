@@ -7,22 +7,84 @@ body {
 }
 
 header {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #000;
+    font-size: 1.4rem;
 }
 
-section {
+.intro {
+    padding: 20px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.gallery-section {
     padding: 40px 20px;
 }
 
-a {
-    color: #00aced;
-    text-decoration: none;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.poster-card {
+    width: 220px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.poster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.poster-card p {
+    margin: 10px 0 6px;
+    font-size: 0.95rem;
+}
+
+.buy-btn {
+    padding: 8px 14px;
+    background-color: #00aced;
+    color: #000;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #0091d6;
+}
+
+.instagram-section {
+    padding: 30px 20px;
+    background: #000;
+    margin-top: 30px;
+}
+
+.instagram-section a {
+    color: #00aced;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 footer {
-    padding: 20px;
+    padding: 15px;
     background-color: #000;
-    font-size: 14px;
+    font-size: 0.85rem;
+    color: #888;
 }
+
+
